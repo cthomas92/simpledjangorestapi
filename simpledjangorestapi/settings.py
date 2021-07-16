@@ -92,7 +92,7 @@ DATABASES = {
         'NAME': 'api',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': '34.101.143.168',
+            'host': 'localhost',
             'port': 27017,
             'username': 'userapi',
             'password': 'api231users',
