@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginxwebserver
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      nginx: nginxwebserver
+  template:
+    metadata:
+      labels:
+        nginx: nginxwebserver
+    spec:
+      containers:
+      - name: nginxwebserver
+        image: nginxwebserver:v1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginxwebserver-entrypoint
+  namespace: default
+spec:
+  type: LoadBalancer
+  selector:
+    nginx: nginxwebserver
+  externalIPs:
+  - 192.168.8.125
+  ports:
+  - port: 80
+    targetPort: 80
+
+  
+
+
