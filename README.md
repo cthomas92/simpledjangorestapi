@@ -52,6 +52,8 @@ Once `pip` has finished downloading the dependencies:
 (env)$ python manage.py runserver
 ```
 And navigate to `http://127.0.0.1:8000/simpleapi/user/`.
+To show your static file you can serve that with nginx
+and the location of static files in nginx/static and the conf is nginx/local.conf.
 
 Write with Python Django
 ```sh
