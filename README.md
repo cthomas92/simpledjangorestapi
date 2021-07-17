@@ -55,6 +55,12 @@ And navigate to `http://127.0.0.1:8000/simpleapi/user/`.
 To show your static file you can serve that with nginx
 and the location of static files in nginx/static and the conf is nginx/local.conf.
 
+finally, if you want to running with docker. you can use Dockerfile in main folder. 
+and for nginx in docker/nginx/Dockerfile
+
+If you want to run in kubernetes go to kubernetes folder for the yaml file. 
+
+
 Write with Python Django
 ```sh
 Credential 
