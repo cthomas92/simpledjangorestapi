@@ -26,6 +26,7 @@ Dont forget to install mongodb and restore dump:
 if want to change credential to connect django to mongodb go to simpledjangorestapi/settings.py
 and search like this
 
+```sh
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -43,6 +44,7 @@ DATABASES = {
     } 
     }
 }
+```
 
 Once `pip` has finished downloading the dependencies:
 ```sh
