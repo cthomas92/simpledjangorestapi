@@ -24,7 +24,25 @@ Then install the dependencies:
 
 Dont forget to install mongodb and restore dump:
 if want to change credential to connect django to mongodb go to simpledjangorestapi/settings.py
-and search djongo
+and search like this
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'api', 
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'localhost', #change to your db server location
+            'port': 27017, # change to your port of db server 
+            'username': 'userapi', #change to your username db server 
+            'password': 'api231users', #change to your password db server 
+            #'authSource': 'chris_training', # db name
+            'authMechanism': 'SCRAM-SHA-1'
+            
+      #'authSource': 'yourcollection', # usually admin
+    } 
+    }
+}
 
 Once `pip` has finished downloading the dependencies:
 ```sh
