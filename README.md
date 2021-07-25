@@ -19,7 +19,7 @@ $ workon restapi
 Then install the dependencies:
 
 ```sh
-(env)$ pip install -r requirements.txt
+(restapi)$ pip install -r requirements.txt
 ```
 
 Dont forget to install mongodb and restore dump:
