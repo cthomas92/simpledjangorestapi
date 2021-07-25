@@ -48,8 +48,8 @@ DATABASES = {
 
 Once `pip` has finished downloading the dependencies:
 ```sh
-(env)$ cd project
-(env)$ python manage.py runserver
+(restapi)$ cd project
+(restapi)$ python manage.py runserver
 ```
 And navigate to `http://127.0.0.1:8000/simpleapi/user/`.
 To show your static file you can serve that with nginx
